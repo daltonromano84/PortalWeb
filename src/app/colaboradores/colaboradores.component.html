@@ -1,0 +1,26 @@
+<div class="container">
+    Users from secure api end point:
+    <label *ngIf="error"> ng works </label>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#ID</th>
+            <th scope="col">Nome</th>
+        
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let colaborador of colaboradores">
+            <th scope="row">{{colaborador.id}}</th>
+            <td>{{colaborador.nome}}</td>
+          
+          </tr>
+         
+        </tbody>
+      </table>
+  <button (click)="logout()" > Logout</button>
+
+</div>
+
+

@@ -1,0 +1,58 @@
+<div class="container">
+
+<h2>Cadastro</h2>
+<form [formGroup]="colaboradorForm" (ngSubmit)="register()">
+  <div class="form-group">
+      <label for="Email">Email</label>
+      <input type="text" formControlName="Email" class="form-control"  />
+    
+  </div>
+  <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" formControlName="Password" class="form-control"  />
+  
+  </div>
+  <div class="form-group">
+    <label for="password">ConfirmPassword</label>
+    <input type="password" formControlName="ConfirmPassword" class="form-control"  />
+
+</div>
+
+<div class="form-group">
+    <label for="IdEmpresa">Empresa</label>
+    <select name="select" formControlName="IdEmpresa" class="form-control" >
+        <option value="3" selected>Downtown Solution</option> 
+        <option value="4" >Mechintosh Mecatronics</option>
+        <option value="5">Acme Industries</option>
+      </select>
+
+</div>
+
+<div class="form-group">
+    <label for="IdCargo">Cargo</label>
+    <select name="select" formControlName="IdCargo" class="form-control" >
+        <option value="1" selected>Auxiliar</option> 
+        <option value="2" >Analista</option>
+        <option value="3">Gerente</option>
+      </select>
+
+</div>
+
+<div class="form-group">
+    <label for="Matricula">Matricula</label>
+    <input type="text" formControlName="Matricula" class="form-control"  />
+  
+</div>
+
+<div class="form-group">
+    <label for="Nome">Nome</label>
+    <input type="text" formControlName="Nome" class="form-control"  />
+  
+</div>
+  <div class="form-group">
+      <button  class="btn btn-primary">Login</button>
+    
+  </div>
+
+</form>
+</div>
